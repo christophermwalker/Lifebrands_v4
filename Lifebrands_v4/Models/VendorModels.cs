@@ -11,13 +11,13 @@ namespace Lifebrands_v4.Entities
         [Key]
         public String IdVendor { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string Vendor_Name { get; set; }
         [Required]
-        public String Address { get; set; }
+        public String Vendor_Address { get; set; }
         [Required]
         public String City { get; set; }
         [Required]
-        public String State { get; set; }
+        public String Vendor_State { get; set; }
         [Required]
         public String Zip { get; set; }
 

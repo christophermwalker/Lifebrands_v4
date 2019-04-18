@@ -24,33 +24,10 @@ namespace Lifebrands_v4.Controllers
 
 
         [Route("Vendor/GetVendors")]
-        public ActionResult GetVendors(string sidx, string sort, int page, int rows)
+        public JsonResult GetVendors(string sidx, string sort, int page, int rows)
         {
             DatabaseContext db = new DatabaseContext();
-
-            var query = from e in db.Vendor select e;
-            int pageIndex = Convert.ToInt32(page) - 1;
-            int totalRecords = db.Vendor.Count();
-            int totalPages = (int)Math.Ceiling((float)totalRecords / (float)rows);
-            var jsonData = new
-            {
-                total = totalPages,
-                page,
-                records = totalRecords,
-                rows = query.Select(x => new { x.IdVendor, x.Name, x.Address, x.City, x.State, x.Zip }).ToList()
-            .Select (x => new {
-                id = x.IdVendor,
-                cell = new [] {
-                    x.IdVendor.ToString(),
-                    x.Name.ToString(),
-                    x.Address.ToString(),
-                    x.City.ToString(),
-                    x.State.ToString(),
-                    x.Zip.ToString()
-                }}).ToArray(),
-            };
-
-            /*
+            
             sort = (sort == null) ? "" : sort;
             int pageIndex = Convert.ToInt32(page) - 1;
             int pageSize = rows;
@@ -59,17 +36,17 @@ namespace Lifebrands_v4.Controllers
                        t => new
                        {
                            t.IdVendor,
-                           t.Name,
-                           t.Address,
+                           t.Vendor_Name,
+                           t.Vendor_Address,
                            t.City,
-                           t.State,
+                           t.Vendor_State,
                            t.Zip,
                        }
-                       ).ToArray();
+                       ).ToList();
 
             int totalRecords = vendorList.Count();
             var totalPages = (int)Math.Ceiling((float)totalRecords / (float)rows);
-            
+            /*
             if (sort.ToUpper() == "DESC")
             {
                 vendorList = vendorList.OrderByDescending(t => t.IdVendor).ToArray();
@@ -80,6 +57,7 @@ namespace Lifebrands_v4.Controllers
                 vendorList = vendorList.OrderBy(t => t.IdVendor).ToArray();
                 vendorList = vendorList.Skip(pageIndex * pageSize).Take(pageSize).ToArray();
             }
+            */
             
             var jsonData = new
             {
@@ -88,8 +66,7 @@ namespace Lifebrands_v4.Controllers
                 records = totalRecords,
                 rows = vendorList
             };
-            */
-
+        
             return Json(jsonData, JsonRequestBehavior.AllowGet);
         }
 

@@ -102,8 +102,8 @@ C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\Microsoft.Owin
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.csprojAssemblyReference.cache
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.csproj.CoreCompileInputs.cache
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.csproj.CopyComplete
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.dll
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.pdb
+C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.csprojAssemblyReference.cache

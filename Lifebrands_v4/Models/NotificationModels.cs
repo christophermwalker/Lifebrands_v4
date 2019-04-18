@@ -9,11 +9,11 @@ namespace Lifebrands_v4.Entities
     public class Notification
     {
         [Key]
-        public String IdNotifications { get; set; }
+        public String IdNotification { get; set; }
         [Required]
-        public DateTime Note_Date { get; set; }
+        public String Note_Date { get; set; }
         [Required]
-        public String Subject { get; set; }
+        public String Note_Subject { get; set; }
         [Required]
         public String Comments { get; set; }
 

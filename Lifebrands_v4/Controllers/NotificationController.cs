@@ -33,9 +33,9 @@ namespace Lifebrands_v4.Controllers
             var NotificationList = db.Notification.Select(
                        t => new
                        {
-                           t.IdNotifications,
+                           t.IdNotification,
                            t.Note_Date,
-                           t.Subject,
+                           t.Note_Subject,
                            t.Comments,
        
                        }
@@ -75,7 +75,7 @@ namespace Lifebrands_v4.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    Model.IdNotifications = Guid.NewGuid().ToString();
+                    Model.IdNotification = Guid.NewGuid().ToString();
                     db.Notification.Add(Model);
                     db.SaveChanges();
                     msg = "Saved Successfully";
