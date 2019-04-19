@@ -11,7 +11,22 @@ namespace Lifebrands_v4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            GridView1.Visible = false;
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        GridView1.DataBind();
+        GridView1.Visible = true;
+
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            GridView1.Visible = false;
         }
     }
 }
