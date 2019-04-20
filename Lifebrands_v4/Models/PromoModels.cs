@@ -17,6 +17,8 @@ namespace Lifebrands_v4.Entities
         [Required]
         public String Promo_Date { get; set; }
 
+        public String Promo_Discount { get; set; }
+
     }
 
 }

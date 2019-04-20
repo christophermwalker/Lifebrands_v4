@@ -37,6 +37,7 @@ namespace Lifebrands_v4.Controllers
                            t.Promo_Name,
                            t.Promo_Description,
                            t.Promo_Date,
+                           t.Promo_Discount,
                        }
                        ).ToList();
 

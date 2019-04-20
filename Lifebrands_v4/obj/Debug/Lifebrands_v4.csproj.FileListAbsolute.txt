@@ -106,7 +106,6 @@ C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebran
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.csproj.CopyComplete
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.dll
 C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.pdb
-C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.csprojAssemblyReference.cache
 C:\Users\bryan\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\Lifebrands_v4.dll.config
 C:\Users\bryan\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\Lifebrands_v4.dll
 C:\Users\bryan\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\Lifebrands_v4.pdb
@@ -218,3 +217,4 @@ C:\Users\bryan\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\roslyn\VBCSCompi
 C:\Users\bryan\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\bryan\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\MySql.Data.dll
 C:\Users\bryan\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\bin\MySql.Data.xml
+C:\Users\walkerc\Documents\GitHub\Lifebrands_v4\Lifebrands_v4\obj\Debug\Lifebrands_v4.csprojAssemblyReference.cache

@@ -50,6 +50,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -198,6 +199,13 @@
     <Compile Include="Models\ProductModels.cs" />
     <Compile Include="Models\PromoModels.cs" />
     <Compile Include="Models\VendorModels.cs" />
+    <Compile Include="PromoReport.aspx.cs">
+      <DependentUpon>PromoReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PromoReport.aspx.designer.cs">
+      <DependentUpon>PromoReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Dashboard.aspx.cs">
@@ -282,6 +290,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Login.aspx" />
+    <Content Include="PromoReport.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Dashboard.aspx" />
