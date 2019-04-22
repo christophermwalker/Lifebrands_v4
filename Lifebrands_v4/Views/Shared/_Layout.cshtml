@@ -3,12 +3,52 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
+    <style>
+
+    body { 
+        background-color: #f0efe2;
+    }
+    .navbar-inverse {
+    background-color: #192737;
+    border-color: #080808;
+    color: white;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+    color: white;
+    }
+
+    .body-content {
+            padding-left: 0px;
+            padding-right: 0px;
+            background-color: white;
+     }
+
+    .row {
+    margin-right: 0px;
+    margin-left: 0;
+    }
+
+    #footer_content {
+    width: 200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+    #footer_content p { 
+        color: white;
+
+    }
+
+    #content_alt { padding-left: 15px; padding-right: 15px;}
+
+}</style>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -17,17 +57,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("LifeBrands,Inc", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Notification", "Notification", "Notification")</li>
-                    <li>@Html.ActionLink("Product", "Product", "Product")</li>
-                    <li>@Html.ActionLink("Promo", "Promo", "Promo")</li>
-                    <li>@Html.ActionLink("Vendor", "Vendor", "Vendor")</li>
+                    
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -36,8 +75,8 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer style="background-color:#192737; padding: 15px;">
+            <div id="footer_content"><p>&copy; @DateTime.Now.Year - Team D Website</p></div>
         </footer>
     </div>
 

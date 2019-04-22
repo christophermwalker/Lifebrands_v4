@@ -181,15 +181,15 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\PromoController.cs" />
     <Compile Include="Controllers\VendorController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -200,12 +200,12 @@
     <Compile Include="Models\VendorModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="Dashboard.aspx.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="Dashboardbk.aspx.cs">
+      <DependentUpon>Dashboardbk.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard.aspx.designer.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="Dashboardbk.aspx.designer.cs">
+      <DependentUpon>Dashboardbk.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -277,14 +277,14 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Dashboard.aspx" />
+    <Content Include="Dashboardbk.aspx" />
     <None Include="Properties\PublishProfiles\Lifebrand - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Lifebrand - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -389,6 +389,7 @@
     <Content Include="Views\Shared\Notification.cshtml" />
     <Content Include="Views\Shared\Promo.cshtml" />
     <Content Include="Views\Shared\Vendor.cshtml" />
+    <Content Include="Views\Shared\Logout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
