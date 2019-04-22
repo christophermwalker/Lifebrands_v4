@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PromoReport.aspx.cs" Inherits="Lifebrands_v4.PromoReport" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Report.aspx.cs" Inherits="Lifebrands_v4.PromoReport" %>
 
 <%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 
@@ -10,7 +10,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" Height="863px" Width="1314px">
+        <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" Height="750px" Width="1150px">
             <Series>
                 <asp:Series Name="Series1" XValueMember="Vendor_Name" YValueMembers="Total" ChartType="Column" />
                

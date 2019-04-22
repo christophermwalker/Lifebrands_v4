@@ -26,5 +26,15 @@ namespace Lifebrands_v4.Controllers
 
             return View();
         }
+        public ActionResult Report()
+        {
+
+            return View();
+        }
+        public ActionResult Dashboard()
+        {
+
+            return View();
+        }
     }
 }
