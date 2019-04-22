@@ -11,9 +11,11 @@ using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace Lifebrands_v4
 {
-    public partial class Dashboard1 : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,39 +25,26 @@ namespace Lifebrands_v4
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
+            
+
             string eventname = TextBox1.Text;
             string eventdate = TextBox2.Text;
             string eventdesc = TextBox3.Text;
             string id = Guid.NewGuid().ToString();
 
             string idsale = Guid.NewGuid().ToString();
-            string cost = DropDownList7.SelectedItem.Value;
             string squantity = TextBox4.Text;
-            string pip = Guid.NewGuid().ToString();
 
-            string aspid = Guid.NewGuid().ToString();
 
             SqlConnection conn = new SqlConnection(@"Data Source=tcp:lifebrand.database.windows.net,1433;Initial Catalog=Lifebrands_v2;Persist Security Info=False;User ID=lifebrand;Password=Passw0rd!;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False");
 
             string sql = "insert into Event (IdEvent, Event_Name, Event_Date, Event_Description) values (@id, @eventname, @eventdate, @eventdesc)";
-
-            // string getcost = "Insert into Sale (IdSale, Quantity, Cost, Event_IdEvent, Product_IdProduct) Values (@idsale, @squantity, @cost, @id, @pip)"; 
-
-            string sql2 = "insert into Sale (IdSale, Quantity, Cost, Event_IdEvent, Product_IdProduct) values (@idsale, @squantity, @cost, @id, @pip)";
-
-            string sql3 = "insert into Aspnetusers_Has_Event (aspnetusers_Id, Event_IdEvent) values (@aspid, @id)";
+            string sql2 = "insert into Sale (IdSale, Quantity, Cost, Event_IdEvent, Product_IdProduct) values (@idsale, @squantity, NULL, @id, 584475)";
 
             try
             {
                 conn.Open();
-
-              /*  SqlCommand cmdcost = new SqlCommand(getcost, conn);
-                cmdcost.Parameters.Add("@cost", SqlDbType.VarChar);
-                cmdcost.Parameters["@cost"].Value = cost; 
-
-                cmdcost.ExecuteNonQuery(); */
-
-
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.Add("@id", SqlDbType.VarChar);
@@ -80,24 +69,10 @@ namespace Lifebrands_v4
                 cmd2.Parameters.Add("@squantity", SqlDbType.VarChar);
                 cmd2.Parameters["@squantity"].Value = squantity;
 
-                cmd2.Parameters.Add("@cost", SqlDbType.VarChar);
-                cmd2.Parameters["@cost"].Value = cost;
-
                 cmd2.Parameters.Add("@id", SqlDbType.VarChar);
                 cmd2.Parameters["@id"].Value = id;
 
-                cmd2.Parameters.Add("@pip", SqlDbType.VarChar);
-                cmd2.Parameters["@pip"].Value = pip;
-
                 cmd2.ExecuteNonQuery();
-
-                SqlCommand cmd3 = new SqlCommand(sql3, conn);
-
-                cmd.Parameters.Add("@aspid", SqlDbType.VarChar);
-                cmd.Parameters["@aspid"].Value = aspid;
-
-                cmd.Parameters.Add("@id", SqlDbType.VarChar);
-                cmd.Parameters["@id"].Value = id;
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
@@ -109,20 +84,14 @@ namespace Lifebrands_v4
                 conn.Close();
             }
 
-                    
-            Label1.Text = "success"; //result must be in string format otherwise convert it to string
-
-        }
+            GridView1.DataBind();
+            GridView1.Visible = true;
+        }   
+        
 
         protected void Button2_Click(object sender, EventArgs e)
         {
             GridView1.Visible = false;
-        }
-
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            GridView1.DataBind();
-            GridView1.Visible = true;
         }
     }
 }

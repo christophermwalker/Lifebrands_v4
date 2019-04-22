@@ -1,17 +1,45 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+    <div id="content_alt">
+        <h1>@ViewBag.Title.</h1>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+
+        <style>
+
+            .col-md-2 {
+                width: 40%;
+            }
+        </style>
+
+
+        <div class="row">
+
+            <div class="col-md-2">
+
+                <address>
+                    42 Wallaby Way<br />
+                    Gallifrey, SW 88888<br />
+                    <abbr title="Phone Office">P:</abbr>
+                    (888)555-5678<br />
+                    <abbr title="Phone Customer Support">P:</abbr>
+                    (888)555-1224
+
+
+                </address>
+
+                <address>
+                    <strong>Support:</strong>   <a href="mailto:support@azurelifebrandsinc.com">support@azurelifebrandsinc.com</a><br />
+                    <strong>Marketing:</strong> <a href="mailto:marketing@azurelifebrandsinc.com">marketing@azurelifebrandsinc.com</a>
+                </address>
+            </div>
+
+            <div class="col-md-2">
+
+                <img class="center" style="margin-left: 20%; height: 320px; width: 500px;" src="/sales1.jpeg" alt="" />
+
+            </div>
+        </div>
+    </div>
